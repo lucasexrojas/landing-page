@@ -74,6 +74,7 @@ header {
     font-size: 18px;
     color: black;
     font-weight: 600;
+    transition: 0.5s;
 }
 
 .cart-icon{
@@ -156,6 +157,7 @@ main{
     font-size: 17px;
     background-color: var(--secondary);
     font-weight: 600;
+    transition: 0.2s;
 }
 
 
@@ -164,6 +166,11 @@ main{
     width: 300px;
     border-radius: 15px;
     justify-content: center;
+}
+
+.hero-card img:hover{
+    transform: scale(1.1);
+    transition: 3s;
 }
 
 .description{
