@@ -120,6 +120,7 @@ main{
     margin: 40px;
     background: rgb(68,67,78);
     background: linear-gradient(90deg, rgba(68,67,78,0.5667309159992122) 0%, rgba(68,67,78,0.6871790952709209) 0%, rgba(68,67,78,0.6871790952709209) 100%);
+    gap: 20px;
 }
 
 .hero-info{
@@ -131,9 +132,9 @@ main{
 
 .hero-info h1{
     font-size: 40px;
-    width: 80%;
-    min-width: 400px;
+    width: 90%;
     color: var(--text-white);
+    display: flex;
 }
 
 .hero-info p{
@@ -193,3 +194,20 @@ main{
     color: var(--text-white);
     flex-wrap: wrap;
 }
+
+@media ( max-width: 992px) {
+    main {
+        background: var(--secondary);
+    }
+    #hero {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hero-info{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
