@@ -282,6 +282,7 @@ footer{
     background: linear-gradient(90deg, rgba(2,0,36,0.698383577063638) 43%, rgba(228,16,16,0.7123891793045343) 89%);
     width: 100%;
     color: #e9eeff;
+    flex-wrap: wrap;
 }
 
 footer ul{
