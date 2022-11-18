@@ -1,0 +1,22 @@
+@media ( max-width: 992px) {
+    main {
+        background: var(--secondary);
+    }
+    #hero {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .hero-info{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .navbar{
+        gap: 10px;
+    }
+}
+
+@media ( max-width: 560px){
+    
+}
