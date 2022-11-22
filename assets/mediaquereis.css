@@ -1,6 +1,8 @@
 @media ( max-width: 992px) {
     main {
-        background: var(--secondary);
+        background-image: url(./img/gaseosas/fondo2.jpg);
+    background-size:cover;
+    background-attachment: fixed;
     }
     #hero {
         display: flex;
