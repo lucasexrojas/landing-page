@@ -15,6 +15,35 @@
     .navbar{
         gap: 10px;
     }
+    .navbar-list{
+        position: absolute;
+        
+        top: 70px;
+        left: 5%;
+        right: 5%;
+        flex-direction: column;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,0.87) 43%, rgba(228,16,16,0.87) 89%);
+        border-radius: 0px 0px 15px 15px;
+        border: 2px solid var(--secondary);
+        border-top: 0px;
+        align-items: flex-start;
+        padding: 50px;
+        z-index: 2;
+        display: none;
+    }
+    .menu-label{
+        display: flex;
+        cursor: pointer;
+        order: 2;
+
+    }
+    .menu-label img{
+        max-width: 80%;
+    }
+    #menu-toggle:checked + .navbar-list{
+        display: flex;
+    }
 }
 
 @media ( max-width: 560px){

@@ -32,7 +32,7 @@
 
 header {
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,0.698383577063638) 43%, rgba(228,16,16,0.7123891793045343) 89%);
+    background: linear-gradient(90deg, rgba(2,0,36,0.87) 43%, rgba(228,16,16,0.87) 89%);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,8 @@ header {
 .navbar, .navbar-list{
     display: flex;
     align-items: center;
-    justify-self: center;   
+    justify-self: center; 
+    justify-content: center;  
 }
 
 .navbar{
@@ -279,7 +280,7 @@ footer{
     justify-content: center;
     gap: 30px;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,0.698383577063638) 43%, rgba(228,16,16,0.7123891793045343) 89%);
+    background: linear-gradient(90deg, rgba(2,0,36,0.87) 43%, rgba(228,16,16,0.87) 89%);
     width: 100%;
     color: #e9eeff;
     flex-wrap: wrap;
@@ -310,4 +311,9 @@ footer a{
 
 .wtsp a{
     color: #1e50ff;
+}
+
+
+#menu-toggle,.menu-label{
+    display: none;
 }
