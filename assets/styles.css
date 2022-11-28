@@ -35,7 +35,7 @@ header {
     background: linear-gradient(90deg, rgba(2,0,36,0.87) 43%, rgba(228,16,16,0.87) 89%);
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     height: 70px;
     padding: 0px 30px;
@@ -95,12 +95,6 @@ header {
     height: 40px;
 }
 
-body{
-    /* background-image: url(./img/gaseosas/fondo.jpg);
-    background-size:cover;
-    background-attachment: scroll; */
-}
-
 main{
     background-image: url(./img/gaseosas/fondo.jpg);
     background-size:cover;
@@ -112,7 +106,8 @@ main{
     width: 100%;
 }
 
-#hero{
+.caja{
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,12 +118,14 @@ main{
     background: rgb(68,67,78);
     background: linear-gradient(90deg, rgba(68,67,78,0.5667309159992122) 0%, rgba(68,67,78,0.6871790952709209) 0%, rgba(68,67,78,0.6871790952709209) 100%);
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-#hero:hover{
+.caja:hover{
     transform: scale(1.03);
     transition: 0.7s;
 }
+
 
 .hero-info{
     display: flex;
@@ -160,11 +157,11 @@ main{
 }
 
 .hero-info a:hover{
-    padding: 15px;
-    font-size: 17px;
+    
     background-color: var(--secondary);
     font-weight: 600;
     transition: 0.2s;
+    transform: scale(1.3);
 }
 
 
@@ -180,22 +177,6 @@ main{
     transition: 3s;
 }
 
-.description{
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(68,67,78);
-    background: linear-gradient(90deg, rgba(68,67,78,0.5667309159992122) 0%, rgba(68,67,78,0.6871790952709209) 0%, rgba(68,67,78,0.6871790952709209) 100%);
-    border-radius: 20px;
-    margin: 40px;
-}
-
-.description:hover{
-    transform: scale(1.03);
-    transition: 0.7s;
-}
-
 .description p{
     display: flex;
     max-width: 80%;
@@ -207,16 +188,12 @@ main{
 }
 
 .cards{
-    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgb(68,67,78);
-    background: linear-gradient(90deg, rgba(68,67,78,0.5667309159992122) 0%, rgba(68,67,78,0.6871790952709209) 0%, rgba(68,67,78,0.6871790952709209) 100%);
-    border-radius: 20px;
-    margin: 40px;
+    gap: 0px;
 }
+
+
 
 .cards h2{
     display: flex;
@@ -245,17 +222,10 @@ main{
     justify-content: center;
 }
 
-.cards:hover{
-    transform: scale(1.03);
-    transition: 0.7s;
-}
-
 .info-cards{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 30px 0px; */
-    /* width: 90%; */
     border-radius: 20px;
     margin: 40px;
 }
@@ -272,21 +242,10 @@ main{
     transition: 0.7s;
 }
 .contact{
-    width: 90%;
     display: flex;
-    /* flex-direction: column; */
     align-items: flex-start;
-    text-align: center;
-    margin: 40px;
-    padding: 20px;
-    justify-content: center;
-    gap: 150px;
-    background: rgb(68,67,78);
-    background: linear-gradient(90deg, rgba(68,67,78,0.5667309159992122) 0%, rgba(68,67,78,0.6871790952709209) 0%, rgba(68,67,78,0.6871790952709209) 100%);
     color: #e9eeff;
-    border-radius: 20px;
-    flex-wrap: wrap;
-
+    gap: 150px;
 }
 
 .contact section{
