@@ -14,6 +14,12 @@
         justify-content: center;
         text-align: center;
     }
+
+    .hero-info h1 {
+        text-align: center;
+        font-size: 25px;
+    }
+
     .navbar{
         gap: 10px;
     }
@@ -49,5 +55,10 @@
 }
 
 @media ( max-width: 560px){
-    
+    .hero-card img{
+       width: 200px; 
+    }
+    .contact iframe {
+        width: 300px;
+    }
 }
